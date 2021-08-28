@@ -5,7 +5,7 @@ import sys
 # imreadについて : https://kuroro.blog/python/wqh9VIEmRXS4ZAA7C4wd/
 # 第一引数 : 画像のファイルパス
 # 戻り値 : 行(高さ) x 列(幅) x 色の三次元配列(numpy.ndarray)が返される。
-img = cv2.imread('./xxx.xxx')
+img = cv2.imread('./input.jpg')
 
 # 画像ファイルが正常に読み込めなかった場合、プログラムを終了する。
 if img is None:
@@ -72,7 +72,7 @@ if k == ord('s'):
     # ]
     # ]
     # imwriteについて : https://kuroro.blog/python/i0tNE1Mp8aEz8Z7n6Ggg/
-    cv2.imwrite('outputA.jpg', img)
+    cv2.imwrite('output.jpg', img)
 
 # destroyAllWindows : 全てのウィンドウを閉じる関数
 # destroyAllWindowsに関する公式ドキュメント : https://docs.opencv.org/master/d7/dfc/group__highgui.html#ga6b7fc1c1a8960438156912027b38f481
